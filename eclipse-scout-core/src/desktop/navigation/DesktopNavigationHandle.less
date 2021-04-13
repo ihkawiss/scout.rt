@@ -18,13 +18,8 @@
 
   & > .collapse-handle-body {
     background-color: @desktop-navigation-handle-background-color;
-    border-color: fade(@desktop-navigation-handle-border-color, 75%);
-    color: fade(@desktop-navigation-handle-color, 75%);
-  }
-
-  &.navigation-closed > .collapse-handle-body {
-    /* increase border radius a little, otherwise it is barely visible */
-    border-radius: 4px;
+    border-color: @desktop-navigation-handle-border-color;
+    color: @desktop-navigation-handle-color;
   }
 
   &.right-aligned {

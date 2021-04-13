@@ -734,7 +734,7 @@ describe('ValueField', () => {
 
       formField.$status.triggerContextMenu();
 
-      let $menu = $('body').find('.popup-body');
+      let $menu = $('body').find('.context-menu');
       expect($menu.find('.menu-item').length).toBe(1);
       expect($menu.find('.menu-item').eq(0).isVisible()).toBe(true);
     });
@@ -753,7 +753,7 @@ describe('ValueField', () => {
       formField.currentMenuTypes = ['Null'];
       formField.$status.triggerContextMenu();
 
-      let $menu = $('body').find('.popup-body');
+      let $menu = $('body').find('.context-menu');
       expect($menu.find('.menu-item').length).toBe(2);
       expect($menu.find('.menu-item').eq(0).isVisible()).toBe(true);
       expect($menu.find('.menu-item').eq(1).isVisible()).toBe(true);
@@ -766,7 +766,7 @@ describe('ValueField', () => {
       formField.setCurrentMenuTypes(['NotNull']);
       formField.$status.triggerContextMenu();
 
-      $menu = $('body').find('.popup-body');
+      $menu = $('body').find('.context-menu');
       expect($menu.find('.menu-item').length).toBe(1);
       expect($menu.find('.menu-item').eq(0).isVisible()).toBe(true);
     });
